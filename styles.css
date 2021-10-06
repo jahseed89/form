@@ -1,0 +1,14 @@
+
+.containerDiv {
+	padding-bottom: 20px;
+	border: 1px solid black;
+	width: 50%;
+	height: 50%;
+	background-color: rgb(15, 238, 134);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form {
+	text-align: center;
+}
