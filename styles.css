@@ -1,14 +1,46 @@
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .containerDiv {
 	padding-bottom: 20px;
 	border: 1px solid black;
 	width: 50%;
 	height: 50%;
 	background-color: rgb(15, 238, 134);
-	margin-left: auto;
-	margin-right: auto;
+	
+}
+
+#error {
+	font-size: 1.5em;
 }
 
 form {
 	text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.containerDiv {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 50%;
+		height: 50%;
+		background-color: rgb(15, 238, 134);
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/* #error {
+		font-size: 1.5em;
+	} */
+	
+	form {
+		text-align: center;
+		
+	}
 }

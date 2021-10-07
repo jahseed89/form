@@ -3,7 +3,8 @@ var arrEmails = ['samson.ocran@gmail.com', 'joyblessing@hotmail.com', 'jamesborn
 // var passwordDetails = ['everything23', 'nice1there', 'joymila87'];
 
 function formValidation(){
-let errorMsg = document.getElementById('error')
+let errorMsg = document.getElementById('error');
+errorMsg.style.color = "red";
 let email = document.getElementById('emailInput').value
 let password = document.getElementById('passwordInput').value
 let confirmPass = document.getElementById('confirmPassInput').value
@@ -27,7 +28,7 @@ let confirmPass = document.getElementById('confirmPassInput').value
   
   //confirming your password
   if (password !== confirmPass) {
-    // errorMsg.innerHTML = "<em>password invalid</em>";
+    errorMsg.innerHTML = "<em>Error</em>";
     alert('invalid passwod');
     return;
   } 
