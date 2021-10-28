@@ -1,5 +1,5 @@
 // records
-var arrEmails = ['samson.ocran@gmail.com', 'joyblessing@hotmail.com', 'jamesborn@yahoo.com'];
+var arrEmails = ['samson.ocran@gmail.com', 'joyblessing@hotmail.com', 'jamesborn@yahoo.com', "emmanuel@gmail.com"];
 // var passwordDetails = ['everything23', 'nice1there', 'joymila87'];
 
 function formValidation(){
@@ -36,13 +36,13 @@ let confirmPass = document.getElementById('confirmPassInput').value
 
  // check our records for the given email
   let numbOfEmails = arrEmails.length;
-  for(index =0; index < numbOfEmails; index++) {
+  for(let index =0; index < numbOfEmails; index++) {
       // if record exist... weclome
       if(email === arrEmails[index]){
         alert(`welcome ${arrEmails[index]}`);
         return;
       }
-  }
+  } 
     // record does not exist
     alert("Record does not exist");
     
